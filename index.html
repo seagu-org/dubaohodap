@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dự báo hồ đập — đã chuyển sang Dự báo Tài nguyên nước</title>
+<!-- The dubaohodap repo was renamed dubaotnn on 2026-10-12, and GitHub does not
+     forward an old Pages address. This folder is pushed by publish_src.py as
+     the whole of a NEW dubaohodap repo; 404.html is the same page, so every old
+     link (dams/..., adminvn/..., #mode=...) lands on the same path of dubaotnn.
+     No-JS fallback: meta refresh to the home page. -->
+<meta http-equiv="refresh" content="3; url=https://seagu-org.github.io/dubaotnn/">
+<meta name="robots" content="noindex">
+<style>
+  body{font:15px/1.5 "Segoe UI",Roboto,Arial,sans-serif;color:#16202b;background:#eef2f6;margin:0;
+    display:flex;min-height:100vh;align-items:center;justify-content:center;padding:16px;box-sizing:border-box}
+  .card{background:#fff;border:1px solid #dfe6ee;border-radius:10px;box-shadow:0 2px 12px rgba(16,32,48,.18);
+    padding:20px 22px;max-width:520px}
+  h1{font-size:18px;margin:0 0 8px}
+  a{color:#1f6fb2;font-weight:600}
+  .muted{color:#6b7a8c;font-size:13px}
+</style>
+<script>
+  // Old address -> new address. GitHub project pages always live under one
+  // /<repo>/ prefix, so everything after it is the page's own path, and
+  // dubaotnn has every page dubaohodap had, under the same path.
+  (function () {
+    var base = "https://seagu-org.github.io/dubaotnn/";
+    var m = location.pathname.match(/^\/[^\/]+\/(.*)$/);
+    var rel = m ? m[1] : "";
+    location.replace(base + rel + location.search + location.hash);
+  })();
+</script>
+</head>
+<body>
+<div class="card">
+  <h1>Trang Dự báo hồ đập đã chuyển sang Dự báo Tài nguyên nước</h1>
+  <p>Bản đồ dự báo mưa đến hồ đập, tỉnh/thành, phường/xã và ô lưới nay ở trang
+    <strong>Dự báo Tài nguyên nước</strong>:</p>
+  <p><a href="https://seagu-org.github.io/dubaotnn/">seagu-org.github.io/dubaotnn</a></p>
+  <p class="muted">Trình duyệt sẽ tự chuyển sang trang mới sau vài giây. Xin cập nhật
+    địa chỉ đã lưu.</p>
+</div>
+</body>
+</html>
